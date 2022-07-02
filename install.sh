@@ -1,10 +1,16 @@
 #!/bin/bash
 
-git config --global user.name "..."
-git config --global user.email "..."
+# -----------------------------------------------------
+# zsh
+# -----------------------------------------------------
+sudo apt-get install zsh -y
+# Make zsh default shell
+chsh -s /usr/bin/zsh
+# Install Oh My Zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-git config --global core.editor "code --wait"
-git config --global diff.tool vscode
-git config --global difftool.vscode.cmd "code --wait --diff \$LOCAL \$REMOTE"
-git config --global merge.tool vscode
-git config --global mergetool.vscode.cmd "code --wait \$MERGED"
+# -----------------------------------------------------
+# set up symlinks
+# -----------------------------------------------------
+ln -s .zshrc ~/.zshrc
+ln -s .gitconfig ~/.gitconfig
