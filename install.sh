@@ -12,5 +12,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 # -----------------------------------------------------
 # set up symlinks
 # -----------------------------------------------------
-ln -s .zshrc ~/.zshrc
-ln -s .gitconfig ~/.gitconfig
+# Remove existing files or symlinks and ignore error if no files found
+rm ~/.zshrc || true
+rm ~/.gitconfig || true
+ln -s ~/dotfiles/.zshrc ~/.zshrc
+ln -s ~/dotfiles/.gitconfig ~/.gitconfig
