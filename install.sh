@@ -7,7 +7,7 @@ apt-get install zsh -y
 # Make zsh default shell
 chsh -s /usr/bin/zsh
 # Install Oh My Zsh
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 # -----------------------------------------------------
 # set up symlinks
