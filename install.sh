@@ -3,7 +3,7 @@
 # -----------------------------------------------------
 # zsh
 # -----------------------------------------------------
-sudo apt-get install zsh -y
+apt-get install zsh -y
 # Make zsh default shell
 chsh -s /usr/bin/zsh
 # Install Oh My Zsh
