@@ -1,16 +1,20 @@
 {
+    // Editor
     "workbench.iconTheme": "vscode-icons",
-    // Controls the line height. Use 0 to compute the lineHeight from the fontSize.
-    "editor.lineHeight": 24,
-    // Enables font ligatures
-    "editor.fontLigatures": true,
-    // Controls if file decorations should use badges.
-    "explorer.decorations.badges": false,
-    "editor.fontSize": 14,
-    // Columns at which to show vertical rulers
     "editor.rulers": [
         88
     ],
+    "editor.tabCompletion": "on",
+    "editor.acceptSuggestionOnEnter": "off",
+    "files.trimTrailingWhitespace": true,
+    "editor.formatOnSave": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "window.zoomLevel": 0,
+    "breadcrumbs.enabled": true,
+    "editor.minimap.enabled": false,
+    "editor.detectIndentation": false,
+    "editor.suggestSelection": "first",
+    "zenMode.hideLineNumbers": false,
     // Python
     "python.linting.enabled": true,
     "python.linting.flake8Enabled": true,
@@ -22,37 +26,45 @@
         "88"
     ],
     "jupyter.sendSelectionToInteractiveWindow": true,
+    "jupyter.interactiveWindowMode": "perFile",
+    "jupyter.askForKernelRestart": false,
     "python.languageServer": "Pylance",
-    // Autocompletion
-    "editor.tabCompletion": "on",
-    // Disable autocompletion on enter
-    "editor.acceptSuggestionOnEnter": "off",
-    // Extends paths on top
-    "workbench.editor.labelFormat": "medium",
-    "files.trimTrailingWhitespace": true,
-    "editor.formatOnSave": true,
-    "workbench.startupEditor": "newUntitledFile",
-    "window.zoomLevel": 0,
+    "python.analysis.autoImportCompletions": false,
     "vsicons.dontShowNewVersionMessage": true,
-    "breadcrumbs.enabled": true,
     "extensions.autoUpdate": false,
     "update.mode": "manual",
-    "editor.minimap.enabled": false,
-    "editor.detectIndentation": false,
-    "editor.suggestSelection": "first",
-    "zenMode.hideLineNumbers": false,
     "workbench.enableExperiments": false,
     "python.experiments.enabled": false,
     "jupyter.experiments.enabled": false,
+    // Terminal
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.enableMultiLinePasteWarning": false,
     // Needed as of January 2022 to fix wrong Python interpreter used in terminal
     // See https://stackoverflow.com/questions/54582361/vscode-terminal-shows-incorrect-python-version-and-path-launching-terminal-from
     "terminal.integrated.env.osx": {
         "PATH": ""
     },
-    "terminal.integrated.defaultProfile.osx": "zsh",
-    "terminal.integrated.defaultProfile.linux": "zsh",
+    // Misc.
+    "extensions.ignoreRecommendations": true,
     "gitlens.currentLine.enabled": false,
     "gitlens.hovers.currentLine.over": "line",
     "gitlens.codeLens.enabled": false,
-    "telemetry.telemetryLevel": "off"
+    "git.autofetch": true,
+    "telemetry.telemetryLevel": "off",
+    // Remote
+    "remote.containers.defaultExtensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "eamodio.gitlens",
+        "innoverio.vscode-dbt-power-user",
+    ],
+    // Machine specific
+    "editor.fontSize": 17,
+    "files.associations": {
+        "*.yaml": "jinja-yaml",
+        "*.yml": "jinja-yaml",
+        "*.sql": "jinja-sql",
+        "*.md": "jinja-md"
+    },
 }
