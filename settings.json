@@ -12,7 +12,7 @@
     "window.zoomLevel": 0,
     "breadcrumbs.enabled": true,
     "editor.minimap.enabled": false,
-    "editor.detectIndentation": false,
+    "editor.detectIndentation": true,
     "editor.suggestSelection": "first",
     "zenMode.hideLineNumbers": false,
     // Python
