@@ -25,6 +25,15 @@
         "--max-line-length",
         "88"
     ],
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        },
+    },
+    "isort.args": [
+        "--profile",
+        "black"
+    ],
     "jupyter.sendSelectionToInteractiveWindow": true,
     "jupyter.interactiveWindowMode": "perFile",
     "jupyter.askForKernelRestart": false,
@@ -58,6 +67,7 @@
         "ms-python.vscode-pylance",
         "eamodio.gitlens",
         "innoverio.vscode-dbt-power-user",
+        "ms-python.isort"
     ],
     // Machine specific
     "editor.fontSize": 17,
