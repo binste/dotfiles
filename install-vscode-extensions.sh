@@ -3,6 +3,8 @@
 packagelist=(
 ms-python.python
 ms-python.vscode-pylance
+ms-python.isort
+njpwerner.autodocstring
 eamodio.gitlens
 alefragnani.project-manager
 vscode-icons-team.vscode-icons

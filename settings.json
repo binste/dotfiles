@@ -45,6 +45,7 @@
     "workbench.enableExperiments": false,
     "python.experiments.enabled": false,
     "jupyter.experiments.enabled": false,
+    "autoDocstring.docstringFormat": "numpy",
     // Terminal
     "terminal.integrated.defaultProfile.osx": "zsh",
     "terminal.integrated.defaultProfile.linux": "zsh",
@@ -67,7 +68,16 @@
         "ms-python.vscode-pylance",
         "eamodio.gitlens",
         "innoverio.vscode-dbt-power-user",
-        "ms-python.isort"
+        "ms-python.isort",
+        "njpwerner.autodocstring"
+    ],
+    "remote.SSH.defaultExtensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "eamodio.gitlens",
+        "innoverio.vscode-dbt-power-user",
+        "ms-python.isort",
+        "njpwerner.autodocstring"
     ],
     // Machine specific
     "editor.fontSize": 17,
