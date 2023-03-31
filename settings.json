@@ -40,6 +40,12 @@
     "jupyter.askForKernelRestart": false,
     "python.languageServer": "Pylance",
     "python.analysis.autoImportCompletions": false,
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.diagnosticMode": "workspace",
+    "python.analysis.diagnosticSeverityOverrides": {
+        // Use mypy for type checking
+        "reportGeneralTypeIssues": "none"
+    },
     "vsicons.dontShowNewVersionMessage": true,
     "extensions.autoUpdate": false,
     "update.mode": "manual",
