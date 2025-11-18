@@ -3,14 +3,21 @@
 packagelist=(
 ms-python.python
 ms-python.vscode-pylance
-ms-python.isort
+ms-toolsai.jupyter
+ms-python.mypy-type-checker
+charliermarsh.ruff
+github.copilot
+github.copilot-chat
+tamasfe.even-better-toml
+oderwat.indent-rainbow
+mechatroner.rainbow-csv
+ms-toolsai.datawrangler
 njpwerner.autodocstring
 eamodio.gitlens
 alefragnani.project-manager
 alefragnani.bookmarks
 vscode-icons-team.vscode-icons
 ms-vscode-remote.vscode-remote-extensionpack
-innoverio.vscode-dbt-power-user
 )
 
 for i in ${packagelist[@]}; do
