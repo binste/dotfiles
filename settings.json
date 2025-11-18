@@ -16,36 +16,21 @@
     "editor.suggestSelection": "first",
     "zenMode.hideLineNumbers": false,
     // Python
-    "python.linting.enabled": true,
-    "python.linting.flake8Enabled": true,
-    "python.linting.mypyEnabled": true,
-    "python.linting.lintOnSave": true,
-    "python.linting.pylintEnabled": false,
-    "python.formatting.provider": "black",
-    "python.linting.flake8Args": [
-        "--max-line-length",
-        "88"
-    ],
     "[python]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "charliermarsh.ruff",
         "editor.codeActionsOnSave": {
-            "source.organizeImports": true
-        },
+            "source.organizeImports": "explicit"
+        }
     },
-    "isort.args": [
-        "--profile",
-        "black"
+    "mypy-type-checker.args": [
+        "--ignore-missing-imports"
     ],
-    "jupyter.sendSelectionToInteractiveWindow": true,
-    "jupyter.interactiveWindowMode": "perFile",
     "jupyter.askForKernelRestart": false,
     "python.languageServer": "Pylance",
+    "jupyter.sendSelectionToInteractiveWindow": true,
+    "jupyter.interactiveWindowMode": "perFile",
     "python.analysis.autoImportCompletions": false,
-    "python.analysis.typeCheckingMode": "basic",
-    "python.analysis.diagnosticMode": "workspace",
-    "python.analysis.diagnosticSeverityOverrides": {
-        // Use mypy for type checking
-        "reportGeneralTypeIssues": "none"
-    },
     "vsicons.dontShowNewVersionMessage": true,
     "extensions.autoUpdate": false,
     "update.mode": "manual",
@@ -73,18 +58,30 @@
     "remote.containers.defaultExtensions": [
         "ms-python.python",
         "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter",
+        "ms-python.mypy-type-checker",
+        "charliermarsh.ruff",
+        "github.copilot",
+        "github.copilot-chat",
+        "tamasfe.even-better-toml",
         "eamodio.gitlens",
-        "innoverio.vscode-dbt-power-user",
-        "ms-python.isort",
-        "njpwerner.autodocstring"
+        "oderwat.indent-rainbow",
+        "mechatroner.rainbow-csv",
+        "ms-toolsai.datawrangler"
     ],
     "remote.SSH.defaultExtensions": [
         "ms-python.python",
         "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter",
+        "ms-python.mypy-type-checker",
+        "charliermarsh.ruff",
+        "github.copilot",
+        "github.copilot-chat",
+        "tamasfe.even-better-toml",
         "eamodio.gitlens",
-        "innoverio.vscode-dbt-power-user",
-        "ms-python.isort",
-        "njpwerner.autodocstring"
+        "oderwat.indent-rainbow",
+        "mechatroner.rainbow-csv",
+        "ms-toolsai.datawrangler"
     ],
     // Machine specific
     "editor.fontSize": 17,
@@ -94,4 +91,17 @@
         "*.sql": "jinja-sql",
         "*.md": "jinja-md"
     },
+    "gitlens.views.branches.avatars": false,
+    "terminal.integrated.localEchoLatencyThreshold": -1,
+    "editor.inlineSuggest.enabled": true,
+    "gitlens.showWhatsNewAfterUpgrades": false,
+    "gitlens.defaultGravatarsStyle": "identicon",
+    "jupyter.debugJustMyCode": false,
+    "jupyter.interactiveWindow.creationMode": "perFile",
+    "jupyter.interactiveWindow.textEditor.executeSelection": true,
+    "bookmarks.sideBar.countBadge": "off",
+    "bookmarks.showCommandsInContextMenu": false,
+    "editor.accessibilitySupport": "off",
+    "git.openRepositoryInParentFolders": "never",
+    "diffEditor.ignoreTrimWhitespace": true
 }
