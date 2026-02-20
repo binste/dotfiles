@@ -4,7 +4,7 @@ packagelist=(
 ms-python.python
 ms-python.vscode-pylance
 ms-toolsai.jupyter
-ms-python.mypy-type-checker
+astral-sh.ty
 charliermarsh.ruff
 github.copilot
 github.copilot-chat
@@ -12,7 +12,6 @@ tamasfe.even-better-toml
 oderwat.indent-rainbow
 mechatroner.rainbow-csv
 ms-toolsai.datawrangler
-njpwerner.autodocstring
 eamodio.gitlens
 alefragnani.project-manager
 alefragnani.bookmarks

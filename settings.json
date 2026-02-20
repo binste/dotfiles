@@ -27,7 +27,10 @@
         "--ignore-missing-imports"
     ],
     "jupyter.askForKernelRestart": false,
-    "python.languageServer": "Pylance",
+    "python.languageServer": "None", // Use ty extension
+    "ty.inlayHints.variableTypes": false,
+    "ty.inlayHints.callArgumentNames": false,
+    "ty.completions.autoImport": false,
     "jupyter.sendSelectionToInteractiveWindow": true,
     "jupyter.interactiveWindowMode": "perFile",
     "python.analysis.autoImportCompletions": false,
